@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.radhe.accelerometer.Accelerometer"> </activity>
+        <activity android:name="com.radhe.compass.CompassActivity"> </activity>
     </application>
 
 </manifest>

@@ -50,15 +50,13 @@ public class Accelerometer extends Activity implements SensorEventListener {
 
     private void getAccelerometer(SensorEvent event) {
         float[] values = event.values;
-        // Movement
         float x = values[0];
         float y = values[1];
         float z = values[2];
-
         float accelationSquareRoot = (x * x + y * y + z * z)
                 / (SensorManager.GRAVITY_EARTH * SensorManager.GRAVITY_EARTH);
         long actualTime = event.timestamp;
-        if (accelationSquareRoot >= 2) //
+        if (accelationSquareRoot >= 2)
         {
             if (actualTime - lastUpdate < 200)
             {
